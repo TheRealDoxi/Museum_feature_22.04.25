@@ -1,0 +1,123 @@
+/* CSS Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* prettier-ignore */
+ol, ul {
+	list-style: none;
+}
+/* prettier-ignore */
+blockquote, q {
+	quotes: none;
+}
+/* prettier-ignore */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------------ Min css starter ------------------------------------------------ */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------------------------------------------ intro side ------------------------------------------------ */
+#forside_baggrund {
+  background-image: url("../img/blur_billede.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#intro {
+  padding: 5rem 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centrer vandret */
+}
+
+#intro h1 {
+  font-size: 5rem;
+}
+
+#intro p {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+#start_knap {
+  background-color: rgb(25, 25, 25);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+/* ------------------------------------------------ vælg karakter ------------------------------------------------ */
+
+#karakter_baggrund {
+  background-image: url("../img/blur_billede.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.karakter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 0rem 3rem;
+  gap: 5rem;
+}
+
+#bothild img,
+#harald img,
+#petrus img {
+  height: 30rem;
+  width: auto;
+}
+
+.navn {
+  padding-top: 7rem;
+  font-size: 2rem;
+}
+
+/* ------------------------------------------------ loading skærm ------------------------------------------------ */
+#loading {
+  width: 100vw;
+  height: auto;
+}
